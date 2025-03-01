@@ -29,7 +29,7 @@ const SliderOne = () => {
 
   return (
     <div className="py-6 space-y-6">
-      <h1 className="text-green-500 text-4xl font-bold text-center">Techtix Events</h1>
+      <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center">Events</h1>
       <Slider {...settings}>
         <>
           <div className="rounded-md px-2 md:p-10">

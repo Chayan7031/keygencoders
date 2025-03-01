@@ -37,8 +37,8 @@ NavbarProps) => {
   };
 
   const handleScroll = () => {
-    setIsDropDownVisible(false)
-  }
+    setIsDropDownVisible(false);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -80,6 +80,9 @@ NavbarProps) => {
           <div onClick={scrollToGallery} className="hover:text-gray-50">
             Gallery
           </div>
+          <Link href="/teams" className="hover:text-gray-50">
+            Teams
+          </Link>
           <div onClick={scrollToBrands} className="hover:text-gray-50">
             Sponsors
           </div>

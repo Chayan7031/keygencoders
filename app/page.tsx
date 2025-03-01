@@ -191,12 +191,13 @@ export default function Home() {
           </motion.p>
 
           <motion.div variants={fadeInUpVariants}>
-            <Link
-              href={"/"}
-              className="cursor-pointer flex items-center justify-center border rounded-md w-48 p-2 mx-auto my-6 text-white"
+            <a
+              href={"/brochure.pdf"}
+              download={"brochure.pdf"}
+              className="cursor-pointer flex items-center justify-center border rounded-md w-48 p-2 mx-auto my-6 text-white hover:bg-green-500 hover:text-black hover:border-green-500"
             >
-              More
-            </Link>
+              Download Brochure
+            </a>
           </motion.div>
         </motion.div>
 

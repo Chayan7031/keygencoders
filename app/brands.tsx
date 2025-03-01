@@ -11,10 +11,10 @@ const font = Lora({
 
 const logos = [
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1740840758/Coding_Ninjas_qmpuz2.png",
   },
   {
-    image: "/logo/logoipsum-245.svg",
+    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1740840955/GeeksforGeeks_lsve7i.png",
   },
   {
     image: "/logo/logoipsum-225.svg",
@@ -22,21 +22,15 @@ const logos = [
   {
     image: "/logo/logoipsum-248.svg",
   },
-  {
-    image: "/logo/logoipsum-249.svg",
-  },
-  {
-    image: "/logo/stripelogo.png",
-  },
 ];
 
 const Brands = () => {
   return (
     <div>
       <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
-        <div className="text-4xl md:pb-8 md:text-7xl text-center 
-        bg-clip-text text-transparent bg-gradient-to-b from-green-500 to-neutral-200 bg-opacity-50">
-          Our Sponsors
+        <div className="text-4xl md:text-5xl md:pb-8 text-center 
+        bg-clip-text text-green-500 font-bold">
+          Sponsors
         </div>
 
         {/* <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
@@ -44,14 +38,14 @@ const Brands = () => {
           brands elevate their business.
         </p> */}
 
-        <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
+        <div className="grid grid-cols-2  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
           {logos.map((logo, i) => (
-            <div key={i} className="p-4 md:p-20">
+            <div key={i} className="p-4 sm:p-10 lg:p-20">
               <Image
                 priority
                 src={logo.image}
-                width={500}
-                height={500}
+                width={300}
+                height={300}
                 alt="logo"
                 className="w-full h-auto max-w-full rounded-lg"
               />

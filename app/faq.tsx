@@ -22,7 +22,7 @@ const FAQS = () => {
         </div>
         <Accordion type="single" collapsible className="text-[#f6f5f4]">
           <AccordionItem value="item-1">
-            <AccordionTrigger>What is Bird?</AccordionTrigger>
+            <AccordionTrigger className="text-2xl">What is Bird?</AccordionTrigger>
             <AccordionContent>
               Bird is a full fledge marketing agency that specializes in
               branding, web design, and digital marketing.

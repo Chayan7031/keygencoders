@@ -60,6 +60,9 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
         <div onClick={scrollToGallery} className="hover:text-gray-50 text-2xl">
           Gallery
         </div>
+        <Link href="/teams" className="hover:text-gray-50 text-2xl">
+          Teams
+        </Link>
         <div onClick={scrollToBrands} className="hover:text-gray-50 text-2xl">
           Sponsors
         </div>

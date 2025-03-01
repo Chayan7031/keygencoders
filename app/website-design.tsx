@@ -6,8 +6,8 @@ const WebsiteDesign = () => {
   return (
     <div className="text-white">
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl  md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-green-500 to-neutral-500 bg-opacity-50">
-          Our Events
+        <div className="text-4xl md:text-5xl text-center bg-clip-text text-green-500 font-bold">
+          Gallery
         </div>
         {/* <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
       Creating, designing and developing websites that work for your business.
