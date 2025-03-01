@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AlignJustify, X } from "lucide-react";
 
@@ -35,6 +35,17 @@ NavbarProps) => {
   const closeDropDown = () => {
     setIsDropDownVisible(false);
   };
+
+  const handleScroll = () => {
+    setIsDropDownVisible(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div>
