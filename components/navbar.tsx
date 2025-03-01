@@ -8,20 +8,24 @@ import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
 interface NavbarProps {
-  scrollToWebsiteDesign: () => void;
-  scrollToGraphicDesign: () => void;
-  scrollToShopifyStores: () => void;
+  scrollToAbout: () => void;
+  scrollToGallery: () => void;
+  scrollToEvents: () => void;
   scrollToBrands: () => void;
-  scrollToServices: () => void; // Define scrollToServices function
+  scrollToInfo: () => void;
+  // scrollToShopifyStores: () => void;
+  // scrollToServices: () => void;
 }
 
 const Navbar = ({
-  scrollToWebsiteDesign,
-  scrollToGraphicDesign,
-  scrollToShopifyStores,
+  scrollToAbout,
+  scrollToEvents,
+  scrollToGallery,
   scrollToBrands,
-  scrollToServices, // Add scrollToServices to props
-}: NavbarProps) => {
+  scrollToInfo,
+}: // scrollToShopifyStores,
+// scrollToServices,
+NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
   const toggleDropDown = () => {
@@ -55,18 +59,21 @@ const Navbar = ({
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+          <div onClick={scrollToAbout} className="hover:text-gray-50">
             About
           </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
+          <div onClick={scrollToEvents} className="hover:text-gray-50">
             Events
           </div>
 
-          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Techtix Events
+          <div onClick={scrollToGallery} className="hover:text-gray-50">
+            Gallery
           </div>
           <div onClick={scrollToBrands} className="hover:text-gray-50">
             Sponsors
+          </div>
+          <div onClick={scrollToInfo} className="hover:text-gray-50">
+            FAQs
           </div>
 
           {/* <Link href="/teams" className="hover:text-gray-50">
@@ -84,7 +91,11 @@ const Navbar = ({
               <X />
               <DropDownMenu
                 onClose={closeDropDown}
-                scrollToServices={scrollToServices} // Pass scrollToServices
+                scrollToAbout={scrollToAbout}
+                scrollToGallery={scrollToGallery}
+                scrollToEvents={scrollToEvents}
+                scrollToBrands={scrollToBrands}
+                scrollToInfo={scrollToInfo} // Pass scrollToServices
               />
             </div>
           ) : (

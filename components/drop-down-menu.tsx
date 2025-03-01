@@ -3,10 +3,21 @@ import Link from "next/link";
 
 interface DropDownMenuProps {
   onClose: () => void;
-  scrollToServices: () => void; // Add scrollToServices function to props
+  scrollToAbout: () => void;
+  scrollToGallery: () => void;
+  scrollToEvents: () => void;
+  scrollToBrands: () => void;
+  scrollToInfo: () => void; // Add scrollToInfo function to props
 }
 
-const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }) => {
+const DropDownMenu: React.FC<DropDownMenuProps> = ({
+  onClose,
+  scrollToAbout,
+  scrollToEvents,
+  scrollToGallery,
+  scrollToBrands,
+  scrollToInfo,
+}) => {
   return (
     <motion.div
       className="
@@ -29,7 +40,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }
       transition={{ duration: 0.5 }}
     >
       <div className="flex-col flex items-center space-y-10 mt-20">
-        <Link href="/" className=" text-2xl">
+        {/* <Link href="/" className=" text-2xl">
           Techtix Events
         </Link>
         <Link href="/" className=" text-2xl">
@@ -37,9 +48,24 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }
         </Link>
 
         <Link href="/" className=" text-2xl">
-        Sponsors
-        </Link>
+          Sponsors
+        </Link> */}
+        <div onClick={scrollToAbout} className="hover:text-gray-50 text-2xl">
+          About
+        </div>
+        <div onClick={scrollToEvents} className="hover:text-gray-50 text-2xl">
+          Events
+        </div>
 
+        <div onClick={scrollToGallery} className="hover:text-gray-50 text-2xl">
+          Gallery
+        </div>
+        <div onClick={scrollToBrands} className="hover:text-gray-50 text-2xl">
+          Sponsors
+        </div>
+        <div onClick={scrollToInfo} className="hover:text-gray-50 text-2xl">
+          FAQs
+        </div>
         {/* Add onClick handler to Services link */}
         {/* <Link href='/#services'  className="cursor-pointer text-black text-2xl">
           Services
