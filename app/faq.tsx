@@ -14,10 +14,10 @@ const FAQS = () => {
         "
     >
       <div className=" p-10 md:p-4 md:px-20">
-        <div className="text-xl md:text-4xl font-bold text-[#f6f5f4]">
+        <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-[#f6f5f4] text-[1.4rem]">
           Have questions ?
         </div>
-        <div className="  font-semibold text-xl md:text-4xl text-gradient bg-gradient-to-r from-emerald-600 to-blue-300 bg-clip-text text-transparent">
+        <div className="  font-semibold text-lg sm:text-xl md:text-3xl text-green-500">
           Get answers.
         </div>
         <Accordion type="single" collapsible className="text-[#f6f5f4] text-xl">

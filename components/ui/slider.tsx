@@ -50,7 +50,7 @@ const SliderOne = () => {
 
   return (
     <div className="space-y-10">
-      <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center">
+      <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center mb-8">
         Events
       </h1>
       <Slider {...settings}>
