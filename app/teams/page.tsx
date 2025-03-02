@@ -8,7 +8,7 @@ const MemberGrid = ({ members, title }: { members: Member[]; title: string }) =>
   return (
     <>
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="md:text-4xl text-2xl text-center bg-clip-text text-transparent bg-gradient-to-b from-green-500 to-neutral-500 bg-opacity-50">
+        <div className="md:text-5xl text-4xl text-center bg-clip-text text-green-500 font-bold">
           {title}
         </div>
       </div>

@@ -3,7 +3,7 @@
 import { CardHoverEffectDemo } from "./snippets/card-hover-effect-snippet";
 
 const Services = () => {
-    return ( <div className="max-w-5xl mx-auto py-20">
+    return ( <div className="max-w-5xl mx-auto py-14 md:py-20 pb-4">
    
         <div className="text-4xl mb-6 md:text-5xl text-center
          bg-clip-text text-green-500 font-bold">

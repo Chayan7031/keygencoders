@@ -8,7 +8,7 @@ import {
 const FAQS = () => {
   return (
     <div
-      className=" mt-10 md:py-10 bg-black w-full
+      className=" mt-4 md:py-10 bg-black w-full
         rounded-3xl
         
         "

@@ -71,6 +71,7 @@ export default function Home() {
     })();
   }, []);
 
+
   return (
     <div className="w-full pt-40 md:items-center md:justify-center bg-black antialiased relative overflow-hidden">
       <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
@@ -89,8 +90,8 @@ export default function Home() {
 
           <motion.div>
             <a
-              href={"/brochure.pdf"}
-              download={"brochure.pdf"}
+              // href={"/brochure.pdf"}
+              // download={"brochure.pdf"}
               className="cursor-pointer flex items-center justify-center border rounded-md w-48 p-2 mx-auto my-6 text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
             >
               Download Brochure

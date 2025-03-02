@@ -38,6 +38,15 @@ const Preloader = () => {
     }
   }, [currentIndex, currentStringIndex]);
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+  
+
   const lineColors = [
     'text-green-400',
     'text-blue-400',

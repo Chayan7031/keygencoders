@@ -7,9 +7,9 @@ const EgnitionGallery = () => {
   const imagesToShow = galleryItems.slice(0, 12);
 
   return (
-    <div className="w-full flex gap-[2rem] flex-col justify-center items-center md:p-16 p-4">
-      <h2 className="text-center text-5xl font-bold relative text-green-500 mb-6">
-        GALLERY
+    <div className="w-full flex gap-[2rem] flex-col justify-center items-center md:p-16 p-4 pt-16">
+      <h2 className="text-center text-4xl md:text-5xl font-bold relative text-green-500 mb-6">
+        Gallery
       </h2>
       <div className="w-full h-fit grid gap-[0.2rem] md:gap-[2rem] grid-cols-2 lg:grid-cols-4 grid-rows-auto">
         {imagesToShow.map((image) => (
