@@ -2,33 +2,50 @@
 
 import Slider from "react-slick";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderOne = () => {
-  const isLargeScreen = useMediaQuery({ minWidth: 1251 });
-  const isMediumScreen = useMediaQuery({ minWidth: 869, maxWidth: 1250 });
-  const isSmallScreen = useMediaQuery({ minWidth: 551, maxWidth: 868 });
-  const isExtraSmallScreen = useMediaQuery({ maxWidth: 550 });
-
-  const slidesToShow = isExtraSmallScreen
-    ? 1
-    : isSmallScreen
-    ? 2
-    : isMediumScreen
-    ? 3
-    : 4;
-
   const settings = {
-    arrows: false,
-    infinite: true,
-    slidesToShow: slidesToShow,
+    dots: false,
+    infinite: true, 
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 1000,
-    className: "w-full mx-auto cursor-pointer center-mode",
+    speed: 5000,
+    arrows: false,
+    cssEase: "linear",
+    slidesToShow: 4,
+    slidesToScroll: 4, 
+    initialSlide: 0, 
+    className: "center",
+    centerMode: true,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 1230, 
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 930, 
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 630, 
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -51,16 +68,14 @@ const SliderOne = () => {
             key={index}
             className="rounded-md px-2 lg:p-4 group relative overflow-hidden"
           >
-
             <div className="rounded-2xl overflow-hidden">
-     
               <Image
                 priority
                 src={src}
                 alt={`Event ${index + 1}`}
                 width={500}
                 height={500}
-                className="rounded-2xl h-96 w-96 object-cover transform transition-transform duration-300 group-hover:scale-105"
+                className="rounded-2xl h-96 w-full object-cover transform transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
             </div>
