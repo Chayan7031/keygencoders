@@ -8,103 +8,57 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderOne = () => {
-  const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  const isSmallScreen = useMediaQuery({ maxWidth: 767 });
+  const isLargeScreen = useMediaQuery({ minWidth: 1251 }); 
+  const isMediumScreen = useMediaQuery({ minWidth: 869, maxWidth: 1250 }); 
+  const isSmallScreen = useMediaQuery({ minWidth: 551, maxWidth: 868 }); 
+  const isExtraSmallScreen = useMediaQuery({ maxWidth: 550 }); 
+
+
+  const slidesToShow = isExtraSmallScreen
+    ? 1
+    : isSmallScreen
+    ? 2 
+    : isMediumScreen
+    ? 3 
+    : 4; 
 
   const settings = {
     arrows: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow, 
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 1000,
     className: "w-full mx-auto cursor-pointer center-mode",
   };
 
-  if (isMediumScreen) {
-    settings.slidesToShow = 1.67;
-  } else if (isSmallScreen) {
-    settings.slidesToShow = 1;
-  }
-
   return (
-    <div className="py-6 space-y-6">
-      <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center">Events</h1>
+    <div className="py-6 space-y-10">
+      <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center">
+        Events
+      </h1>
       <Slider {...settings}>
-        <>
-          <div className="rounded-md px-2 md:p-10">
+        {[
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845744/seminar5_newxnq.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845744/seminar7_x6cydo.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845743/seminar8_zt8q5g.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/seminar6_qsguxs.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845744/seminar4_uluodz.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845742/seminar2_m2qr1j.png",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/seminar3_hxpet9.jpg",
+          "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/seminar1_aamt9y.jpg",
+        ].map((src, index) => (
+          <div key={index} className="rounded-md px-2 lg:p-4">
             <Image
               priority
-              src="/images/business.jpeg"
-              alt="logo"
+              src={src}
+              alt={`Event ${index + 1}`}
               width={500}
               height={500}
-              className="
-                  rounded-2xl
-                      "
+              className="rounded-2xl h-96 w-96"
             />
           </div>
-        </>
-
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/coffe.jpeg"
-              alt="logo"
-              width={500}
-              height={500}
-              className="
-                  rounded-2xl 
-                      "
-            />
-          </div>
-        </>
-
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/small-business-3.webp"
-              alt="logo"
-              width={500}
-              height={500}
-              className="
-                  rounded-2xl 
-                      "
-            />
-          </div>
-        </>
-
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/man.jpeg"
-              alt="logo"
-              width={500}
-              height={500}
-              className="
-                  rounded-2xl 
-                      "
-            />
-          </div>
-        </>
-
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/image-business.jpeg"
-              alt="logo"
-              width={500}
-              height={500}
-              className="
-                  rounded-2xl 
-                      "
-            />
-          </div>
-        </>
+        ))}
       </Slider>
     </div>
   );

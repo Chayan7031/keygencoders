@@ -6,24 +6,24 @@ export interface Member {
 
 export const fourthYearMembers: Member[] = [
   {
-    name: "Jyotirmay Bairagya",
+    name: "Sarabinda Roy",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/sarabinda_da_gv3igg.png",
   },
   {
-    name: "Ushasi Das",
+    name: "Partha Bhowmik",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/partha_Da_ftollq.png",
   },
   {
-    name: "Arko Kundu",
+    name: "Krishna Paul",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844255/krishna_da_gbjqqs.png",
   },
   {
-    name: "Debamrita Paul",
+    name: "Vaibhavi Roy",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844253/vaibhavi_di_b0liay.png",
   },
 
 ]
@@ -102,6 +102,31 @@ export const secondYearMembers: Member[] = [
     name: "Rohit Karmakar",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829068/rohit_karmakar_dinojc.jpg",
+  },
+  {
+    name: "Nayan Banik",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829067/nayan_banik_rvilxm.jpg",
+  },
+  {
+    name: "Sourajeet Routh",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829066/sourajeet_vzes3d.jpg",
+  },
+  {
+    name: "Krishanu Biswas",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829174/krishanu_biswas_fazo9k.jpg",
+  },
+  {
+    name: "Jay Kumar Lal",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843927/JayKumarLal_ypm4hv.jpg",
+  },
+  {
+    name: "Ananya Ghosh",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843926/ananya_ghosh_baxiwj.jpg",
   },
   {
     name: "Nayan Banik",

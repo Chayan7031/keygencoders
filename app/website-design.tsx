@@ -9,139 +9,120 @@ const WebsiteDesign = () => {
         <div className="text-4xl md:text-5xl text-center bg-clip-text text-green-500 font-bold">
           Gallery
         </div>
-        {/* <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-      Creating, designing and developing websites that work for your business.
-        </p> */}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-10">
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
+    
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+        
+        <div className="md:col-span-2 md:row-span-2">
+          <Image
+            width={800}
+            height={800}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845750/events12_wn2u5o.png"
+            alt="Big Event 1"
+          />
         </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-              alt=""
-            />
-          </div>
+
+    
+        <div>
+          <Image
+            width={500}
+            height={500}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845748/events9_nl4aji.png"
+            alt="Medium Event 1"
+          />
         </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-              alt=""
-            />
-          </div>
+        <div>
+          <Image
+            width={500}
+            height={500}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845746/events11_vw1qld.png"
+            alt="Medium Event 2"
+          />
         </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-              alt=""
-            />
-          </div>
+
+      
+        <div>
+          <Image
+            width={300}
+            height={300}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png"
+            alt="Small Event 1"
+          />
+        </div>
+        <div>
+          <Image
+            width={300}
+            height={300}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845744/events7_jjxrjc.png"
+            alt="Small Event 2"
+          />
+        </div>
+
+  
+        <div>
+          <Image
+            width={500}
+            height={500}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845748/events9_nl4aji.png"
+            alt="Medium Event 3"
+          />
+        </div>
+        <div>
+          <Image
+            width={500}
+            height={500}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845746/events11_vw1qld.png"
+            alt="Medium Event 4"
+          />
+        </div>
+
+      
+        <div className="md:col-span-2 md:row-span-2 md:col-start-3">
+          <Image
+            width={800}
+            height={800}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845750/events12_wn2u5o.png"
+            alt="Big Event 2"
+          />
+        </div>
+
+       
+        <div>
+          <Image
+            width={300}
+            height={300}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png"
+            alt="Small Event 3"
+          />
+        </div>
+        <div>
+          <Image
+            width={300}
+            height={300}
+            priority
+            className="h-full w-full object-cover rounded-lg"
+            src="https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845744/events7_jjxrjc.png"
+            alt="Small Event 4"
+          />
         </div>
       </div>
     </div>
