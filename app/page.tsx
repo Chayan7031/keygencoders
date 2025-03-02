@@ -72,7 +72,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-black antialiased relative overflow-hidden">
+    <div className="w-full pt-40 md:items-center md:justify-center bg-black antialiased relative overflow-hidden">
       <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
 
       <Spotlight className="hidden md:flex md:-top-80 left-80" fill="green" />
@@ -102,7 +102,7 @@ export default function Home() {
           <About />
         </motion.div>
 
-        <motion.div ref={eventsRef} initial="hidden" animate="visible" className="w-full pt-20">
+        <motion.div ref={eventsRef} initial="hidden" animate="visible" className="w-full pt-10">
           <SliderOne />
         </motion.div>
 

@@ -8,24 +8,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SliderOne = () => {
-  const isLargeScreen = useMediaQuery({ minWidth: 1251 }); 
-  const isMediumScreen = useMediaQuery({ minWidth: 869, maxWidth: 1250 }); 
-  const isSmallScreen = useMediaQuery({ minWidth: 551, maxWidth: 868 }); 
-  const isExtraSmallScreen = useMediaQuery({ maxWidth: 550 }); 
-
+  const isLargeScreen = useMediaQuery({ minWidth: 1251 });
+  const isMediumScreen = useMediaQuery({ minWidth: 869, maxWidth: 1250 });
+  const isSmallScreen = useMediaQuery({ minWidth: 551, maxWidth: 868 });
+  const isExtraSmallScreen = useMediaQuery({ maxWidth: 550 });
 
   const slidesToShow = isExtraSmallScreen
     ? 1
     : isSmallScreen
-    ? 2 
+    ? 2
     : isMediumScreen
-    ? 3 
-    : 4; 
+    ? 3
+    : 4;
 
   const settings = {
     arrows: false,
     infinite: true,
-    slidesToShow: slidesToShow, 
+    slidesToShow: slidesToShow,
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 1000,
@@ -33,7 +32,7 @@ const SliderOne = () => {
   };
 
   return (
-    <div className="py-6 space-y-10">
+    <div className="space-y-10">
       <h1 className="text-green-500 text-4xl md:text-5xl font-bold text-center">
         Events
       </h1>
@@ -48,15 +47,23 @@ const SliderOne = () => {
           "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/seminar3_hxpet9.jpg",
           "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/seminar1_aamt9y.jpg",
         ].map((src, index) => (
-          <div key={index} className="rounded-md px-2 lg:p-4">
-            <Image
-              priority
-              src={src}
-              alt={`Event ${index + 1}`}
-              width={500}
-              height={500}
-              className="rounded-2xl h-96 w-96"
-            />
+          <div
+            key={index}
+            className="rounded-md px-2 lg:p-4 group relative overflow-hidden"
+          >
+
+            <div className="rounded-2xl overflow-hidden">
+     
+              <Image
+                priority
+                src={src}
+                alt={`Event ${index + 1}`}
+                width={500}
+                height={500}
+                className="rounded-2xl h-96 w-96 object-cover transform transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"></div>
+            </div>
           </div>
         ))}
       </Slider>

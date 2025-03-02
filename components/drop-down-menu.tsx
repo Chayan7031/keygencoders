@@ -1,80 +1,110 @@
-import { motion } from "framer-motion";
+"use client";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface DropDownMenuProps {
   onClose: () => void;
+  handleNavLinkClick: (scrollFunction: () => void) => void;
   scrollToAbout: () => void;
   scrollToGallery: () => void;
   scrollToEvents: () => void;
   scrollToBrands: () => void;
-  scrollToInfo: () => void; // Add scrollToInfo function to props
+  scrollToInfo: () => void;
 }
 
-const DropDownMenu: React.FC<DropDownMenuProps> = ({
+const DropDownMenu = ({
   onClose,
+  handleNavLinkClick,
   scrollToAbout,
-  scrollToEvents,
   scrollToGallery,
+  scrollToEvents,
   scrollToBrands,
   scrollToInfo,
-}) => {
-  return (
-    <motion.div
-      className="
-    w-full
-    h-screen
-    bg-black
-     bg-opacity-70
-     text-white
-     p-6
-     space-y-4
-     absolute
-     top-0
-     left-0
-     right-0
-     z-50
-    "
-      initial={{ opacity: 0, y: "-80%" }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: "-100%" }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="flex-col flex items-center space-y-10 mt-20">
-        {/* <Link href="/" className=" text-2xl">
-          Techtix Events
-        </Link>
-        <Link href="/" className=" text-2xl">
-          Events
-        </Link>
+}: DropDownMenuProps) => {
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-        <Link href="/" className=" text-2xl">
-          Sponsors
-        </Link> */}
-        <div onClick={scrollToAbout} className="hover:text-gray-50 text-2xl">
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        ref={dropdownRef}
+        initial={{ y: "-100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }} 
+        exit={{ y: "-100%", opacity: 0 }} 
+        transition={{ duration: 0.5, ease: "easeInOut" }} 
+        className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-70 backdrop-blur-sm flex flex-col justify-center items-center space-y-6"
+      >
+        <div
+          onClick={() => {
+            handleNavLinkClick(scrollToAbout);
+            onClose();
+          }}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           About
         </div>
-        <div onClick={scrollToEvents} className="hover:text-gray-50 text-2xl">
+        <div
+          onClick={() => {
+            handleNavLinkClick(scrollToEvents);
+            onClose();
+          }}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           Events
         </div>
-
-        <div onClick={scrollToGallery} className="hover:text-gray-50 text-2xl">
+        <div
+          onClick={() => {
+            handleNavLinkClick(scrollToGallery);
+            onClose();
+          }}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           Gallery
         </div>
-        <Link href="/teams" className="hover:text-gray-50 text-2xl">
+        <Link
+          href="/teams"
+          onClick={onClose}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           Teams
         </Link>
-        <div onClick={scrollToBrands} className="hover:text-gray-50 text-2xl">
+        <div
+          onClick={() => {
+            handleNavLinkClick(scrollToBrands);
+            onClose();
+          }}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           Sponsors
         </div>
-        <div onClick={scrollToInfo} className="hover:text-gray-50 text-2xl">
+        <div
+          onClick={() => {
+            handleNavLinkClick(scrollToInfo);
+            onClose();
+          }}
+          className="text-slate-300 hover:text-gray-50 cursor-pointer text-2xl"
+        >
           FAQs
         </div>
-        {/* Add onClick handler to Services link */}
-        {/* <Link href='/#services'  className="cursor-pointer text-black text-2xl">
-          Services
-        </Link> */}
-      </div>
-    </motion.div>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

@@ -15,9 +15,9 @@ const Footer: React.FC = () => {
         KEYGENCODERS
       </div>
 
-      <div className="mx-auto mt-6 w-[35%] max-w-[200px] items-center justify-center">
+      <div className="flex mt-6 w-full items-center justify-center">
         <Image
-          className="glitch"
+          className=""
           src="/logo/logo.png"
           alt="KeyGEnCoders"
           width={100}

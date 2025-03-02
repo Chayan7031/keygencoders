@@ -30,7 +30,7 @@ export default function RootLayout({
       <body 
       suppressHydrationWarning={true}
       className={font.className}>
-        <Analytics />
+        {/* <Analytics /> */}
         <Navbar
         scrollToAbout={about}
         scrollToEvents={events}

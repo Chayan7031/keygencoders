@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation"; 
 import { AlignJustify, X } from "lucide-react";
 
 import Image from "next/image";
@@ -13,8 +13,6 @@ interface NavbarProps {
   scrollToEvents: () => void;
   scrollToBrands: () => void;
   scrollToInfo: () => void;
-  // scrollToShopifyStores: () => void;
-  // scrollToServices: () => void;
 }
 
 const Navbar = ({
@@ -23,10 +21,10 @@ const Navbar = ({
   scrollToGallery,
   scrollToBrands,
   scrollToInfo,
-}: // scrollToShopifyStores,
-// scrollToServices,
-NavbarProps) => {
+}: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const toggleDropDown = () => {
     setIsDropDownVisible(!isDropDownVisible);
@@ -40,6 +38,14 @@ NavbarProps) => {
     setIsDropDownVisible(false);
   };
 
+  const handleNavLinkClick = (scrollFunction: () => void) => {
+    if (pathname === "/teams") {
+      router.push("/");
+    } else {
+      scrollFunction(); 
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -48,8 +54,11 @@ NavbarProps) => {
   }, []);
 
   return (
-    <div>
-      <div className="p-6 md:p-10 flex items-center justify-between z-50">
+    <div className="fixed w-full top-0 left-0 z-50">
+      <div
+        className="p-6 md:px-10 flex items-center justify-between 
+        backdrop-blur-sm bg-opacity-30 bg-black border-b border-neutral-800"
+      >
         <div>
           <Link className="cursor-pointer" href="/">
             <Image
@@ -70,34 +79,44 @@ NavbarProps) => {
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToAbout} className="hover:text-gray-50">
+          <div
+            onClick={() => handleNavLinkClick(scrollToAbout)}
+            className="hover:text-gray-50"
+          >
             About
           </div>
-          <div onClick={scrollToEvents} className="hover:text-gray-50">
+          <div
+            onClick={() => handleNavLinkClick(scrollToEvents)}
+            className="hover:text-gray-50"
+          >
             Events
           </div>
 
-          <div onClick={scrollToGallery} className="hover:text-gray-50">
+          <div
+            onClick={() => handleNavLinkClick(scrollToGallery)}
+            className="hover:text-gray-50"
+          >
             Gallery
           </div>
           <Link href="/teams" className="hover:text-gray-50">
             Teams
           </Link>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
+          <div
+            onClick={() => handleNavLinkClick(scrollToBrands)}
+            className="hover:text-gray-50"
+          >
             Sponsors
           </div>
-          <div onClick={scrollToInfo} className="hover:text-gray-50">
+          <div
+            onClick={() => handleNavLinkClick(scrollToInfo)}
+            className="hover:text-gray-50"
+          >
             FAQs
           </div>
-
-          {/* <Link href="/teams" className="hover:text-gray-50">
-            Teams
-          </Link> */}
         </div>
 
         <div className="flex md:hidden">
           {isDropDownVisible ? (
-            // display an x icon when the drop is visible
             <div
               onClick={toggleDropDown}
               className="w-8 h-8 text-slate-300 cursor-pointer"
@@ -105,11 +124,12 @@ NavbarProps) => {
               <X />
               <DropDownMenu
                 onClose={closeDropDown}
+                handleNavLinkClick={handleNavLinkClick} 
                 scrollToAbout={scrollToAbout}
                 scrollToGallery={scrollToGallery}
                 scrollToEvents={scrollToEvents}
                 scrollToBrands={scrollToBrands}
-                scrollToInfo={scrollToInfo} // Pass scrollToServices
+                scrollToInfo={scrollToInfo}
               />
             </div>
           ) : (

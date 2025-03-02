@@ -74,6 +74,21 @@ export const thirdYearMembers: Member[] = [
 
 export const secondYearMembers: Member[] = [
   {
+    name: "Ishita Mukherjee",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894502/ishita_mukherjee_eugswu.jpg",
+  },
+  {
+    name: "Sayan Chatterjee",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740895644/sayan_mkc1d9.jpg",
+  },
+  {
+    name: "Durgeshwar Kumar Shaw",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+  },
+  {
     name: "Madhurima Khan",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823692/madhurima_khan_jexrvx.jpg",
@@ -129,19 +144,19 @@ export const secondYearMembers: Member[] = [
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843926/ananya_ghosh_baxiwj.jpg",
   },
   {
-    name: "Nayan Banik",
+    name: "Sounava Chatterjee",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829067/nayan_banik_rvilxm.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894515/sounava_chatterjee_hg5mn3.jpg",
   },
   {
-    name: "Sourajeet Routh",
+    name: "Md Kaif Sardar",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829066/sourajeet_vzes3d.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894499/kaif_getc6u.jpg",
   },
   {
-    name: "Krishanu Biswas",
+    name: "Arka Dash",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829174/krishanu_biswas_fazo9k.jpg",
+      "https://pbs.twimg.com/profile_images/1812737303904690176/VxkiRzE7.jpg",
   },
 ];
 

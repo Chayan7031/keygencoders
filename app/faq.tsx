@@ -14,15 +14,15 @@ const FAQS = () => {
         "
     >
       <div className=" p-10 md:p-4 md:px-20">
-        <div className="text-3xl md:text-7xl font-bold text-[#f6f5f4]">
+        <div className="text-xl md:text-4xl font-bold text-[#f6f5f4]">
           Have questions ?
         </div>
-        <div className="  font-semibold text-3xl md:text-6xl text-gradient bg-gradient-to-r from-emerald-600 to-blue-300 bg-clip-text text-transparent">
+        <div className="  font-semibold text-xl md:text-4xl text-gradient bg-gradient-to-r from-emerald-600 to-blue-300 bg-clip-text text-transparent">
           Get answers.
         </div>
-        <Accordion type="single" collapsible className="text-[#f6f5f4]">
+        <Accordion type="single" collapsible className="text-[#f6f5f4] text-xl">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-2xl">What is Bird?</AccordionTrigger>
+            <AccordionTrigger>What is Bird?</AccordionTrigger>
             <AccordionContent>
               Bird is a full fledge marketing agency that specializes in
               branding, web design, and digital marketing.

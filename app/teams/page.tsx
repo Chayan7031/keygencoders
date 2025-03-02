@@ -43,7 +43,7 @@ const MemberGrid = ({ members, title }: { members: Member[]; title: string }) =>
 
 const Page = () => {
   return (
-    <div className="text-white p-2">
+    <div className="text-white p-2 pt-28">
       <MemberGrid members={fourthYearMembers} title="Our Convenors" />
       <MemberGrid members={thirdYearMembers} title="Third year members" />
       <MemberGrid members={secondYearMembers} title="Second year members" />
