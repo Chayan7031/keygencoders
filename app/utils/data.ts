@@ -85,9 +85,9 @@ export const secondYearMembers: Member[] = [
   },
   {
     id: 4,
-    name: "Madhurima Khan",
+    name: "Ananya Ghosh",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823692/madhurima_khan_jexrvx.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843926/ananya_ghosh_baxiwj.jpg",
   },
   {
     id: 5,
@@ -143,11 +143,12 @@ export const secondYearMembers: Member[] = [
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843927/JayKumarLal_ypm4hv.jpg",
   },
+  
   {
     id: 14,
-    name: "Ananya Ghosh",
+    name: "Madhurima Khan",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843926/ananya_ghosh_baxiwj.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823692/madhurima_khan_jexrvx.jpg",
   },
   {
     id: 15,
