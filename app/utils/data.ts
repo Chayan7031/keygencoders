@@ -81,7 +81,7 @@ export const secondYearMembers: Member[] = [
     id: 3,
     name: "Durgeshwar Kumar Shaw",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741010886/durgeshwar_shaw_vlyaf5.jpg",
   },
   {
     id: 4,
@@ -105,7 +105,7 @@ export const secondYearMembers: Member[] = [
     id: 7,
     name: "Shatakshi Saha",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823667/shatakshi_saha_aespdr.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741010879/shatakshi_saha_wnu0jy.jpg",
   },
   {
     id: 8,
