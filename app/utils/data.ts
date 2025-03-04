@@ -97,10 +97,11 @@ export const secondYearMembers: Member[] = [
   },
   {
     id: 6,
-    name: "Rohit Chowdhury",
+    name: "Md Kaif Sardar",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823669/Rohit_chowdhury_a30xhk.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894499/kaif_getc6u.jpg",
   },
+  
   {
     id: 7,
     name: "Shatakshi Saha",
@@ -129,45 +130,46 @@ export const secondYearMembers: Member[] = [
     id: 11,
     name: "Sourajeet Routh",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829066/sourajeet_vzes3d.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741097015/sourajeet_h57kwg.jpg",
   },
   {
     id: 12,
+    name: "Arka Dash",
+    imageUrl:
+      "https://pbs.twimg.com/profile_images/1812737303904690176/VxkiRzE7.jpg",
+  },
+  {
+    id: 13,
     name: "Krishanu Biswas",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740829174/krishanu_biswas_fazo9k.jpg",
   },
   {
-    id: 13,
+    id: 14,
     name: "Jay Kumar Lal",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740843927/JayKumarLal_ypm4hv.jpg",
   },
   
   {
-    id: 14,
+    id: 15,
     name: "Madhurima Khan",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823692/madhurima_khan_jexrvx.jpg",
   },
   {
-    id: 15,
+    id: 16,
     name: "Sounava Chatterjee",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894515/sounava_chatterjee_hg5mn3.jpg",
   },
   {
-    id: 16,
-    name: "Md Kaif Sardar",
-    imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894499/kaif_getc6u.jpg",
-  },
-  {
     id: 17,
-    name: "Arka Dash",
+    name: "Rohit Chowdhury",
     imageUrl:
-      "https://pbs.twimg.com/profile_images/1812737303904690176/VxkiRzE7.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823669/Rohit_chowdhury_a30xhk.jpg",
   },
+  
 ];
 
 export const firstYearInterns: Member[] = [
