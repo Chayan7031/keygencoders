@@ -44,7 +44,7 @@ const Preloader = () => {
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, []);
+  }, [currentIndex, currentStringIndex]);
   
 
   const lineColors = [
