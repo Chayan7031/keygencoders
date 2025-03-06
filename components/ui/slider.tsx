@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react"; // Import useEffect
+import { useState, useEffect } from "react"; 
 import Slider from "react-slick";
 import Image from "next/image";
 import { events, Event as SliderEvent } from "@/app/utils/Slider";
@@ -8,6 +8,7 @@ import { events, Event as SliderEvent } from "@/app/utils/Slider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { Download } from "lucide-react";
 
 const SliderOne = () => {
   const [selectedEvent, setSelectedEvent] = useState<SliderEvent | null>(null);
@@ -103,65 +104,71 @@ const SliderOne = () => {
       </Slider>
 
       {selectedEvent && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-        <div className="backdrop-blur-sm bg-opacity-30 bg-green-800 p-4 md:p-6 rounded-lg max-w-3xl flex flex-col lg:flex-row gap-4 md:gap-6">
-          <div className="w-full lg:w-1/3 h-48 sm:h-60 lg:h-auto">
-            <Image
-              src={selectedEvent.eventImage}
-              alt={selectedEvent.eventName}
-              width={400}
-              height={300}
-              className="rounded-lg object-cover w-full h-full"
-            />
-          </div>
-          <div className="w-full lg:w-2/3 flex flex-col justify-between">
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-green-500">
-                {selectedEvent.eventName}
-              </h2>
-              <p className="text-green-500 mb-2 md:mb-3 text-sm md:text-base">
-                <strong className="text-green-400">Date:</strong>{" "}
-                {selectedEvent.eventDate}
-              </p>
-              <p className="text-green-500 mb-3 md:mb-4 text-sm md:text-base">
-                <strong className="text-green-400">Description:</strong>{" "}
-                {selectedEvent.eventDescription}
-              </p>
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={closePopup}
+        >
+          <div 
+            className="backdrop-blur-sm bg-opacity-50 bg-green-800 p-4 md:p-6 rounded-lg max-w-3xl flex flex-col lg:flex-row gap-4 md:gap-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="w-full lg:w-1/3 h-48 sm:h-60 lg:h-auto">
+              <Image
+                src={selectedEvent.eventImage}
+                alt={selectedEvent.eventName}
+                width={400}
+                height={300}
+                className="rounded-lg object-contain w-full h-full"
+              />
             </div>
-            
-            <div className="flex flex-row justify-center space-x-3 mt-4">
-              <Link
-                href={selectedEvent.registrationLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer flex items-center justify-center border rounded-md p-2 text-sm text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
-              >
-                Register Now
-              </Link>
-              {selectedEvent.workbookDownloadLink && (
+            <div className="w-full lg:w-2/3 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-green-500">
+                  {selectedEvent.eventName}
+                </h2>
+                <p className="text-green-500 mb-2 md:mb-3 text-sm md:text-base">
+                  <strong className="text-green-400">Date:</strong>{" "}
+                  {selectedEvent.eventDate}
+                </p>
+                <p className="text-green-500 mb-3 md:mb-4 text-sm md:text-base">
+                  <strong className="text-green-400">Description:</strong>{" "}
+                  {selectedEvent.eventDescription}
+                </p>
+              </div>
+              
+              <div className="flex flex-row justify-center space-x-3 mt-4">
                 <Link
-                  href={selectedEvent.workbookDownloadLink}
+                  href={selectedEvent.registrationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download
                   className="cursor-pointer flex items-center justify-center border rounded-md p-2 text-sm text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
                 >
-                  Download Workbook
+                  Register Now
                 </Link>
-              )}
-            </div>
-            
-            <div className="flex justify-center mt-4">
-              <button
-                onClick={closePopup}
-                className="cursor-pointer flex items-center justify-center border rounded-md w-32 p-2 text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
-              >
-                Close
-              </button>
+                {selectedEvent.workbookDownloadLink && (
+                  <Link
+                    href={selectedEvent.workbookDownloadLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    className="cursor-pointer flex items-center justify-center border rounded-md p-2 text-sm text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
+                  >
+                    <Download/>  Workbook
+                  </Link>
+                )}
+              </div>
+              
+              <div className="flex justify-center mt-4">
+                <button
+                  onClick={closePopup}
+                  className="cursor-pointer flex items-center justify-center border rounded-md w-32 p-1 text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       )}
     </div>
   );
