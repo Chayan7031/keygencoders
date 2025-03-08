@@ -24,29 +24,26 @@ const FAQS = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>What is KeyGEnCoders?</AccordionTrigger>
             <AccordionContent>
-              Bird is a full fledge marketing agency that specializes in
-              branding, web design, and digital marketing.
+            KeyGEnCoders is the official coding club of Kalyani Government Engineering College. 
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>who is it for?</AccordionTrigger>
             <AccordionContent>
-              You can start by contacting us. We will get back to you within 24
-              hours.
+            It is for young coding enthusiasts
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>How many events do we conduct in Techtix&apos; 25?</AccordionTrigger>
+            <AccordionTrigger>How many events we will conduct in Techtix&apos; 25?</AccordionTrigger>
             <AccordionContent>
-              We offer custom tailored solutions for your business. Contact us
-              to get a quote.
+            We will conduct four events in Techtix &apos;25: Code Buzz, Code Dictator, Puzzlify, and Code the Canvas.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-4">
             <AccordionTrigger>How to join KeyGEnCoders?</AccordionTrigger>
             <AccordionContent>
-              We offer Monday-Friday support for all our clients.
+            To join KeyGEnCoders, candidates must pass an interview to test their skills.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

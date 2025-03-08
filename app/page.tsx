@@ -80,7 +80,7 @@ export default function Home() {
 
       <div className="p-4 mx-auto relative z-10 w-full px-2">
         <motion.div initial="hidden" animate="visible" className="space-y-6 m-8">
-          <motion.div className="text-4xl py-10 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-green-500 to bg-neutral-400 bg-opacity-50">
+          <motion.div className="text-3xl py-10 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-green-500 to bg-neutral-400 bg-opacity-50">
             KeyGEnCoders <br /> KGEC
           </motion.div>
 
