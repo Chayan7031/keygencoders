@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
       </div>
       <hr className="pt-4 my-8 ml-20 mr-20 border-[#092b0b]" />
       <p className="text-center font-medium text-white/60">
-        contact us : 1234567890 / 1234567890
+        contact us : +918918599712 / +919874553769
       </p>
       <p className="pb-4 text-center font-medium text-white/60">
         &copy; {new Date().getFullYear()} KeyGEnCoders. All rights reserved.

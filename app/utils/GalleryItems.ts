@@ -18,7 +18,7 @@ export interface GalleryItem {
     },
     {
       id: 4,
-      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png",
+      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/events1_mkzmrb.jpg",
     },
     {
       id: 5,
@@ -34,7 +34,7 @@ export interface GalleryItem {
     },
     {
       id: 8,
-      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845741/events1_mkzmrb.jpg",
+      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png",
     },
     {
       id: 9,

@@ -17,7 +17,7 @@ const logos = [
     image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452822/dominos_kgkv49.png",
   },
   {
-    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452822/codechef-removebg-preview_mmg5py.png",
+    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741454696/codechef-removebg-preview_1_dlawdi.png",
   },
 ];
 

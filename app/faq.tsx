@@ -22,21 +22,21 @@ const FAQS = () => {
         </div>
         <Accordion type="single" collapsible className="text-[#f6f5f4] text-xl">
           <AccordionItem value="item-1">
-            <AccordionTrigger>What is KeyGEnCoders, and who is it for?</AccordionTrigger>
+            <AccordionTrigger>What is KeyGEnCoders?</AccordionTrigger>
             <AccordionContent>
               Bird is a full fledge marketing agency that specializes in
               branding, web design, and digital marketing.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>How many events do we conduct in a month?</AccordionTrigger>
+            <AccordionTrigger>who is it for?</AccordionTrigger>
             <AccordionContent>
               You can start by contacting us. We will get back to you within 24
               hours.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Pricing ?</AccordionTrigger>
+            <AccordionTrigger>How many events do we conduct in Techtix&apos; 25?</AccordionTrigger>
             <AccordionContent>
               We offer custom tailored solutions for your business. Contact us
               to get a quote.
@@ -44,7 +44,7 @@ const FAQS = () => {
           </AccordionItem>
 
           <AccordionItem value="item-4">
-            <AccordionTrigger>Support ?</AccordionTrigger>
+            <AccordionTrigger>How to join KeyGEnCoders?</AccordionTrigger>
             <AccordionContent>
               We offer Monday-Friday support for all our clients.
             </AccordionContent>
