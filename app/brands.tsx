@@ -14,13 +14,10 @@ const logos = [
     image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1740840758/Coding_Ninjas_qmpuz2.png",
   },
   {
-    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1740840955/GeeksforGeeks_lsve7i.png",
+    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452822/dominos_kgkv49.png",
   },
   {
-    image: "/logo/logoipsum-225.svg",
-  },
-  {
-    image: "/logo/logoipsum-248.svg",
+    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452822/codechef-removebg-preview_mmg5py.png",
   },
 ];
 
@@ -38,14 +35,14 @@ const Brands = () => {
           brands elevate their business.
         </p> */}
 
-        <div className="grid grid-cols-2  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
           {logos.map((logo, i) => (
-            <div key={i} className="p-4 sm:p-10 lg:p-20">
+            <div key={i} className="p-2 sm:p-5 lg:p-10">
               <Image
                 priority
                 src={logo.image}
-                width={300}
-                height={300}
+                width={800}
+                height={800}
                 alt="logo"
                 className="w-full h-auto max-w-full rounded-lg"
               />

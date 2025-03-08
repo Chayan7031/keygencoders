@@ -7,9 +7,9 @@ export interface Member {
 export const fourthYearMembers: Member[] = [
   {
     id: 1,
-    name: "Sarabinda Roy",
+    name: "Vaibhavi Roy",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/sarabinda_da_gv3igg.png",
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452040/WhatsApp_Image_2025-03-08_at_22.05.00_00545170_frbmdo.jpg",
   },
   {
     id: 2,
@@ -25,9 +25,9 @@ export const fourthYearMembers: Member[] = [
   },
   {
     id: 4,
-    name: "Vaibhavi Roy",
+    name: "Sarabinda Roy",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844253/vaibhavi_di_b0liay.png",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/sarabinda_da_gv3igg.png",
   },
 ];
 
