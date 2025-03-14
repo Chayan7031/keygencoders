@@ -36,31 +36,37 @@ export const thirdYearMembers: Member[] = [
     id: 1,
     name: "Jyotirmay Bairagya",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960533/jyotirmoy_bairagya_f1xi6s.jpg",
   },
   {
     id: 2,
     name: "Ushasi Das",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960380/ushasi_das_fddvkj.jpg",
   },
   {
     id: 3,
     name: "Arko Kundu",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960367/arko_kundu_ba2i9e.jpg",
   },
   {
     id: 4,
     name: "Debamrita Paul",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960371/Debamrita_Paul_h2qc2h.jpg",
   },
   {
     id: 5,
     name: "Archismita Ghosh",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824729/user_q6pp8i.avif",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960365/archismita_ghosh_npvy6i.jpg",
+  },
+  {
+    id: 6,
+    name: "Arpan Pal",
+    imageUrl:
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960370/arpan_pal_yuioqq.png",
   },
 ];
 
