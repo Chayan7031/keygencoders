@@ -28,7 +28,7 @@ const FAQS = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>who is it for?</AccordionTrigger>
+            <AccordionTrigger>Who is it for?</AccordionTrigger>
             <AccordionContent>
             It is for young coding enthusiasts
             </AccordionContent>
