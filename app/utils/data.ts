@@ -4,7 +4,7 @@ export interface Member {
   imageUrl: string;
 }
 
-export const fourthYearMembers: Member[] = [
+export const convenors: Member[] = [
   {
     id: 1,
     name: "Vaibhavi Roy",
@@ -21,7 +21,7 @@ export const fourthYearMembers: Member[] = [
     id: 3,
     name: "Krishna Paul",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844255/krishna_da_gbjqqs.png",
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742402023/Krishna-da_o9npgy.jpg",
   },
   {
     id: 4,
@@ -30,6 +30,33 @@ export const fourthYearMembers: Member[] = [
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/sarabinda_da_gv3igg.png",
   },
 ];
+
+export const fourthYearMembers: Member[]= [
+  {
+    id: 1,
+    name: "Suman Ghorai",
+    imageUrl:
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400353/WhatsApp_Image_2025-03-19_at_21.31.09_24f35173_xx80ku.jpg",
+  },
+  {
+    id: 2,
+    name: "Prasenjit Chowdhury",
+    imageUrl:
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400536/IMG-20250319-WA0026_1_honbgg.jpg",
+  },
+  {
+    id: 3,
+    name: "Debodyuti Bhattacharjee",
+    imageUrl:
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400501/IMG-20250319-WA0027_1_mo5mwf.jpg",
+  },
+  {
+    id: 4,
+    name: "Swarnendu Mondal",
+    imageUrl:
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400630/IMG-20250319-WA0028_1_ky4buw.jpg",
+  },
+]
 
 export const thirdYearMembers: Member[] = [
   {

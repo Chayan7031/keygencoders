@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import { thirdYearMembers, secondYearMembers, firstYearInterns, Member, fourthYearMembers } from '@/app/utils/data'
+import { thirdYearMembers, secondYearMembers, firstYearInterns, Member, fourthYearMembers, convenors } from '@/app/utils/data'
 
 const MemberGrid = ({ members, title }: { members: Member[]; title: string }) => {
   return (
@@ -44,7 +44,8 @@ const MemberGrid = ({ members, title }: { members: Member[]; title: string }) =>
 const Page = () => {
   return (
     <div className="text-white p-2 pt-28">
-      <MemberGrid members={fourthYearMembers} title="Our Convenors" />
+      <MemberGrid members={convenors} title="Our Convenors" />
+      <MemberGrid members={fourthYearMembers} title="Fourth year members" />
       <MemberGrid members={thirdYearMembers} title="Third year members" />
       <MemberGrid members={secondYearMembers} title="Second year members" />
       <MemberGrid members={firstYearInterns} title="First year interns" />

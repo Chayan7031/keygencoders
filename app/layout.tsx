@@ -17,6 +17,9 @@ const font = Poppins(
 export const metadata: Metadata = {
   title: "KeyGEnCoders",
   description: "",
+  icons:{
+    icon:"/favicon.ico"
+  },
   openGraph: {
     images : {
         url: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1742362273/WhatsApp_Image_2025-03-19_at_11.01.03_645f9bc7_nwe9bv.jpg", 
