@@ -56,6 +56,12 @@ export const fourthYearMembers: Member[]= [
     imageUrl:
       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400630/IMG-20250319-WA0028_1_ky4buw.jpg",
   },
+  {
+    id: 5,
+    name: "Arnab Ghosh",
+    imageUrl:
+      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742486684/WhatsApp_Image_2025-03-20_at_21.31.49_d89ffab8_ovfhxs.jpg",
+  },
 ]
 
 export const thirdYearMembers: Member[] = [
