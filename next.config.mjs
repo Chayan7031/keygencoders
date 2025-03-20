@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["flowbite.s3.amazonaws.com", 'images.unsplash.com', "res.cloudinary.com", "pbs.twimg.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flowbite.s3.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+      },
+    ],
   },
 };
 

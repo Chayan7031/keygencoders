@@ -17,6 +17,7 @@ const font = Poppins(
 export const metadata: Metadata = {
   title: "KeyGEnCoders",
   description: "",
+  metadataBase:new URL("https://keygen-coders.vercel.app/"),
   icons:{
     icon:"/favicon.ico"
   },
