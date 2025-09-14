@@ -30,14 +30,14 @@ export interface GalleryItem {
     },
     {
       id: 7,
-      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png",
-    },
-    {
-      id: 9,
       imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845746/events11_vw1qld.png",
     },
     {
       id: 8,
+      imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png",
+    },
+    {
+      id: 9,
       imageNew: "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740845745/events8_z9ismy.png",
     },
     {
