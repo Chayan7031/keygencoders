@@ -11,13 +11,13 @@ const font = Lora({
 
 const logos = [
   {
-    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1740840758/Coding_Ninjas_qmpuz2.png",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884469/images_al7pod.jpg",
   },
   {
-    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452822/dominos_kgkv49.png",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884278/domino039s-pizza-logo-hd-transparent-background-735811696675648utxbcdqal9_wx0w8z.png",
   },
   {
-    image: "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741454696/codechef-removebg-preview_1_dlawdi.png",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884787/1698941114071_emml4z.jpg",
   },
 ];
 

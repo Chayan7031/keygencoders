@@ -7,67 +7,7 @@ export interface Member {
 export const convenors: Member[] = [
   {
     id: 1,
-    name: "Vaibhavi Roy",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1741452040/WhatsApp_Image_2025-03-08_at_22.05.00_00545170_frbmdo.jpg",
-  },
-  {
-    id: 2,
-    name: "Partha Bhowmik",
-    imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/partha_Da_ftollq.png",
-  },
-  {
-    id: 3,
-    name: "Krishna Paul",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742402023/Krishna-da_o9npgy.jpg",
-  },
-  {
-    id: 4,
-    name: "Sarabinda Roy",
-    imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740844254/sarabinda_da_gv3igg.png",
-  },
-];
-
-export const fourthYearMembers: Member[]= [
-  {
-    id: 1,
-    name: "Suman Ghorai",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400353/WhatsApp_Image_2025-03-19_at_21.31.09_24f35173_xx80ku.jpg",
-  },
-  {
-    id: 2,
-    name: "Prasenjit Chowdhury",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400536/IMG-20250319-WA0026_1_honbgg.jpg",
-  },
-  {
-    id: 3,
-    name: "Debodyuti Bhattacharjee",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400501/IMG-20250319-WA0027_1_mo5mwf.jpg",
-  },
-  {
-    id: 4,
-    name: "Swarnendu Mondal",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400630/IMG-20250319-WA0028_1_ky4buw.jpg",
-  },
-  {
-    id: 5,
-    name: "Arnab Ghosh",
-    imageUrl:
-      "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742486684/WhatsApp_Image_2025-03-20_at_21.31.49_d89ffab8_ovfhxs.jpg",
-  },
-]
-
-export const thirdYearMembers: Member[] = [
-  {
-    id: 1,
-    name: "Jyotirmay Bairagya",
+    name: "Jyotirmoy Bairagya",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960533/jyotirmoy_bairagya_f1xi6s.jpg",
   },
@@ -87,23 +27,83 @@ export const thirdYearMembers: Member[] = [
     id: 4,
     name: "Debamrita Paul",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960371/Debamrita_Paul_h2qc2h.jpg",
-  },
-  {
-    id: 5,
-    name: "Archismita Ghosh",
-    imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960365/archismita_ghosh_npvy6i.jpg",
-  },
-  {
-    id: 6,
-    name: "Arpan Pal",
-    imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960370/arpan_pal_yuioqq.png",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757883089/Screenshot_2025-09-15_022102_istdyg.png",
   },
 ];
 
-export const secondYearMembers: Member[] = [
+// export const fourthYearMembers: Member[]= [
+//   {
+//     id: 1,
+//     name: "Suman Ghorai",
+//     imageUrl:
+//       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400353/WhatsApp_Image_2025-03-19_at_21.31.09_24f35173_xx80ku.jpg",
+//   },
+//   {
+//     id: 2,
+//     name: "Prasenjit Chowdhury",
+//     imageUrl:
+//       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400536/IMG-20250319-WA0026_1_honbgg.jpg",
+//   },
+//   {
+//     id: 3,
+//     name: "Debodyuti Bhattacharjee",
+//     imageUrl:
+//       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400501/IMG-20250319-WA0027_1_mo5mwf.jpg",
+//   },
+//   {
+//     id: 4,
+//     name: "Swarnendu Mondal",
+//     imageUrl:
+//       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742400630/IMG-20250319-WA0028_1_ky4buw.jpg",
+//   },
+//   {
+//     id: 5,
+//     name: "Arnab Ghosh",
+//     imageUrl:
+//       "https://res.cloudinary.com/di4qqgdw2/image/upload/v1742486684/WhatsApp_Image_2025-03-20_at_21.31.49_d89ffab8_ovfhxs.jpg",
+//   },
+// ]
+
+// export const thirdYearMembers: Member[] = [
+//   {
+//     id: 1,
+//     name: "Jyotirmay Bairagya",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960533/jyotirmoy_bairagya_f1xi6s.jpg",
+//   },
+//   {
+//     id: 2,
+//     name: "Ushasi Das",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960380/ushasi_das_fddvkj.jpg",
+//   },
+//   {
+//     id: 3,
+//     name: "Arko Kundu",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960367/arko_kundu_ba2i9e.jpg",
+//   },
+//   {
+//     id: 4,
+//     name: "Debamrita Paul",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960371/Debamrita_Paul_h2qc2h.jpg",
+//   },
+//   {
+//     id: 5,
+//     name: "Archismita Ghosh",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960365/archismita_ghosh_npvy6i.jpg",
+//   },
+//   {
+//     id: 6,
+//     name: "Arpan Pal",
+//     imageUrl:
+//       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960370/arpan_pal_yuioqq.png",
+//   },
+// ];
+
+export const thirdYearMembers: Member[] = [
   {
     id: 1,
     name: "Ishita Mukherjee",
@@ -114,7 +114,7 @@ export const secondYearMembers: Member[] = [
     id: 2,
     name: "Sayan Chatterjee",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740895644/sayan_mkc1d9.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757883935/WhatsApp_Image_2025-09-15_at_01.42.30_4f241aa4_jrvrv4.jpg",
   },
   {
     id: 3,
@@ -175,7 +175,7 @@ export const secondYearMembers: Member[] = [
     id: 12,
     name: "Arka Dash",
     imageUrl:
-      "https://pbs.twimg.com/profile_images/1812737303904690176/VxkiRzE7.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757883781/WhatsApp_Image_2025-09-15_at_01.42.29_45f891af_fjyjdu.jpg",
   },
   {
     id: 13,
@@ -211,7 +211,7 @@ export const secondYearMembers: Member[] = [
   
 ];
 
-export const firstYearInterns: Member[] = [
+export const secondYearInterns: Member[] = [
   {
     id: 1,
     name: "Vansh Deo",
@@ -220,9 +220,9 @@ export const firstYearInterns: Member[] = [
   },
   {
     id: 2,
-    name: "Arpan Biswas",
+    name: "Chayan Samanta",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823668/arpan_biswas_dygvp8.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757883569/Screenshot_2025-09-15_022919_u7wygj.png",
   },
   {
     id: 3,
@@ -232,15 +232,15 @@ export const firstYearInterns: Member[] = [
   },
   {
     id: 4,
-    name: "Abhishek Modak",
+    name: "Arpan Biswas",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824309/abhishek_modak_pwxti8.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823668/arpan_biswas_dygvp8.jpg",
   },
   {
     id: 5,
-    name: "Rohit Majumder",
+    name: "Abhishek Modak",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824301/rohit_majumdar_asmtth.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824309/abhishek_modak_pwxti8.jpg",
   },
   {
     id: 6,
@@ -262,9 +262,9 @@ export const firstYearInterns: Member[] = [
   },
   {
     id: 9,
-    name: "Chayan Samanta",
+    name: "Rohit Majumder",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740825355/chayan_samanta_vud6jh.jpg",
+      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740824301/rohit_majumdar_asmtth.jpg",
   },
   {
     id: 10,
