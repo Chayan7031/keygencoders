@@ -86,7 +86,7 @@ const SliderOne = () => {
           <div
             key={event.id}
             className="rounded-md px-2 lg:p-4 group relative overflow-hidden cursor-pointer"
-            onClick={() => handleEventClick(event)}
+            // onClick={() => handleEventClick(event)}
           >
             <div className="rounded-2xl overflow-hidden">
               <Image
@@ -103,7 +103,7 @@ const SliderOne = () => {
         ))}
       </Slider>
 
-      {selectedEvent && (
+      {/* {selectedEvent && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
           onClick={closePopup}
@@ -171,7 +171,7 @@ const SliderOne = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
