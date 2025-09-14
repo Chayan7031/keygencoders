@@ -88,16 +88,16 @@ export default function Home() {
             Coding club of Kalyani Government Engineering College
           </motion.p>
 
-          <motion.div>
-            <a
-              href={"/brochure.pdf"}
-              download={"brochure.pdf"}
-              className="cursor-pointer flex items-center justify-center border rounded-md w-48 p-2 mx-auto my-6 text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
-            >
+          {/* <motion.div> */}
+            {/* <a */}
+              {/* href={"/brochure.pdf"} */}
+              {/* download={"brochure.pdf"} */}
+              {/* className="cursor-pointer flex items-center justify-center border rounded-md w-48 p-2 mx-auto my-6 text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500" */}
+            {/* > */}
               {/* Download Brochure */}
-            </a>
-          </motion.div>
-        </motion.div>
+            {/* </a> */}
+          {/* </motion.div> */}
+        {/* </motion.div> */}
 
         <motion.div ref={aboutRef} initial="hidden" animate="visible" className="w-full pt-20">
           <About />
