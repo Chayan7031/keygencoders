@@ -138,7 +138,8 @@ const SliderOne = () => {
               
               <div className="flex flex-row justify-center space-x-3 mt-4">
                 <Link
-                  href={selectedEvent.registrationLink}
+                 href={"/"}
+                  // href={selectedEvent.registrationLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer flex items-center justify-center border rounded-md p-2 text-sm text-white hover:bg-green-500 hover:text-black hover:font-semibold hover:border-green-500"
@@ -147,7 +148,8 @@ const SliderOne = () => {
                 </Link>
                 {selectedEvent.workbookDownloadLink && (
                   <Link
-                    href={selectedEvent.workbookDownloadLink}
+                  href={"/"}
+                    // href={selectedEvent.workbookDownloadLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
