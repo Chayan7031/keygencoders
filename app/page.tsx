@@ -97,7 +97,7 @@ export default function Home() {
               {/* Download Brochure */}
             {/* </a> */}
           {/* </motion.div> */}
-        {/* </motion.div> */}
+        </motion.div>
 
         <motion.div ref={aboutRef} initial="hidden" animate="visible" className="w-full pt-20">
           <About />
