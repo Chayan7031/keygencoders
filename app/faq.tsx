@@ -34,9 +34,9 @@ const FAQS = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>How many events we will conduct in Techtix&apos; 25?</AccordionTrigger>
+            <AccordionTrigger>How many events we conducted in Techtix&apos; 25?</AccordionTrigger>
             <AccordionContent>
-            We will conduct four events in Techtix &apos;25: Code Buzz, Code Dictator, Puzzlify, and Code the Canvas.
+            We conducted four events in Techtix &apos;25: Code Buzz, Code Dictator, Puzzlify, and Code the Canvas.
             </AccordionContent>
           </AccordionItem>
 
