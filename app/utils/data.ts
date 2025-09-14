@@ -222,7 +222,7 @@ export const secondYearInterns: Member[] = [
     id: 2,
     name: "Chayan Samanta",
     imageUrl:
-      "https://res.cloudinary.com/db9l85phg/image/upload/v1757883569/Screenshot_2025-09-15_022919_u7wygj.png",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757885463/IMG_20250915_025901_l8c9dq.jpg",
   },
   {
     id: 3,
