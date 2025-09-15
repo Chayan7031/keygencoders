@@ -108,7 +108,7 @@ export const thirdYearMembers: Member[] = [
     id: 1,
     name: "Ishita Mukherjee",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740894502/ishita_mukherjee_eugswu.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757962509/WhatsApp_Image_2025-09-15_at_14.17.55_1f07dbca_vkirex.jpg",
   },
   {
     id: 2,
