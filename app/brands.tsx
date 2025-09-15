@@ -11,13 +11,13 @@ const font = Lora({
 
 const logos = [
   {
-    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884469/images_al7pod.jpg",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757922257/images__1_-removebg-preview_gqd1my.png",
   },
   {
-    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884278/domino039s-pizza-logo-hd-transparent-background-735811696675648utxbcdqal9_wx0w8z.png",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757922549/domino039s-pizza-logo-hd-transparent-background-735811696675648utxbcdqal9-removebg-preview_1_fx3rpt.png",
   },
   {
-    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757884787/1698941114071_emml4z.jpg",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1757922371/WhatsApp_Image_2025-09-15_at_12.52.21_0460e1cb-removebg-preview_1_syzkz8.png",
   },
 ];
 
@@ -37,7 +37,7 @@ const Brands = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
           {logos.map((logo, i) => (
-            <div key={i} className="p-2 sm:p-5 lg:p-10">
+            <div key={i} className="p-10 sm:p-5 lg:p-10">
               <Image
                 priority
                 src={logo.image}
