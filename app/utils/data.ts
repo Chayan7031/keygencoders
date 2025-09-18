@@ -7,25 +7,25 @@ export interface Member {
 export const convenors: Member[] = [
   {
     id: 1,
-    name: "Jyotirmoy Bairagya (President)",
+    name: "Jyotirmoy Bairagya",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960533/jyotirmoy_bairagya_f1xi6s.jpg",
   },
   {
     id: 2,
-    name: "Ushasi Das (CP Lead)",
+    name: "Ushasi Das",
     imageUrl:
       "https://res.cloudinary.com/db9l85phg/image/upload/v1758218026/Screenshot_2025-09-18_232223_cyl7r1.png",
   },
   {
     id: 3,
-    name: "Arko Kundu (Outreach Lead)",
+    name: "Arko Kundu",
     imageUrl:
       "https://res.cloudinary.com/dlxpcyiin/image/upload/v1741960367/arko_kundu_ba2i9e.jpg",
   },
   {
     id: 4,
-    name: "Debamrita Paul (Tech Lead)",
+    name: "Debamrita Paul",
     imageUrl:
       "https://res.cloudinary.com/db9l85phg/image/upload/v1757883089/Screenshot_2025-09-15_022102_istdyg.png",
   },
