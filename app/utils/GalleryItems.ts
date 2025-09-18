@@ -50,7 +50,7 @@ export interface GalleryItem {
     },
     {
       id: 10,
-      imageNew: "https://res.cloudinary.com/db9l85phg/image/upload/v1757962999/488542729_1089110736567042_7922786731461639857_n_ilfupk.jpg",
+      imageNew: "https://res.cloudinary.com/db9l85phg/image/upload/v1758218287/WhatsApp_Image_2025-09-18_at_23.13.58_167d0801_zvkqli.jpg",
     },
     // {
     //   id: 10,
