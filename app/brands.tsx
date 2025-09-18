@@ -26,7 +26,7 @@ const logos = [
     image: "https://res.cloudinary.com/db9l85phg/image/upload/v1758210800/HackerRank_Icon-1000px-removebg-preview_as4cwu.png",
   },
   {
-    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1758210905/630248973183b_unstop_logo-removebg-preview_rz7txt.png",
+    image: "https://res.cloudinary.com/db9l85phg/image/upload/v1758215964/images__2_-removebg-preview_hhaxut.png",
   },
   {
     image: "https://res.cloudinary.com/db9l85phg/image/upload/v1758211121/ueScU0LV_400x400-removebg-preview_yyqdce.png",

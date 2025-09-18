@@ -103,7 +103,7 @@ export default function Home() {
           <About />
         </motion.div>
 
-        <motion.div ref={eventsRef} initial="hidden" animate="visible" className="w-full pt-10">
+        <motion.div ref={eventsRef} initial="hidden" animate="visible" className="w-full ">
           <SliderOne />
         </motion.div>
 

@@ -106,9 +106,9 @@ export const convenors: Member[] = [
 export const thirdYearMembers: Member[] = [
   {
     id: 1,
-    name: "Ishita Mukherjee",
+    name: "Asif Iqbal",
     imageUrl:
-      "https://res.cloudinary.com/db9l85phg/image/upload/v1757962509/WhatsApp_Image_2025-09-15_at_14.17.55_1f07dbca_vkirex.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1758215250/Asif_Iqbal_wefbdd.jpg",
   },
   {
     id: 2,
@@ -130,9 +130,9 @@ export const thirdYearMembers: Member[] = [
   },
   {
     id: 5,
-    name: "Asif Iqbal",
+    name: "Ishita Mukherjee",
     imageUrl:
-      "https://res.cloudinary.com/dlxpcyiin/image/upload/v1740823670/asif_iqbal_txp7db.jpg",
+      "https://res.cloudinary.com/db9l85phg/image/upload/v1757962509/WhatsApp_Image_2025-09-15_at_14.17.55_1f07dbca_vkirex.jpg",
   },
   {
     id: 6,
